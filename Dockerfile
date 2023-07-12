@@ -1,9 +1,6 @@
 FROM ubuntu
 
 RUN apt update
-RUN apt install -y net-tools
-RUN apt install -y iproute2
-RUN apt install -y iputils-ping
+RUN apt install -y net-tools iproute2 iputils-ping iperf3
 
-CMD ["sleep", "7200"]
-
+CMD ["sleep", "720000"]
